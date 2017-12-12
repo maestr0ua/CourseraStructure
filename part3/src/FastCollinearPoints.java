@@ -21,11 +21,6 @@ public class FastCollinearPoints {
 
             Arrays.sort(copy, points[p].slopeOrder());
 
-            List<Double> slopes = new ArrayList<>();
-            for (Point point : copy) {
-                slopes.add(points[p].slopeTo(point));
-            }
-
             int startIndex = 0;
             int endIndex = 0;
 
